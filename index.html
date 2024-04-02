@@ -15,7 +15,12 @@
         <div class="container  dbug">
             <h1>Argomenti corso.</h1>
             <ul class="list-group">
-                <li class="list-group-item" v-for="(element, index) in topics">{{element.text}}</li>
+                <li class="list-group-item d-flex justify-content-between " v-for="(element, index) in topics">
+                    <span class="pointer">{{element.text}}</span>
+                    <span class="pointer"><i class="fa-solid fa-trash" style="color: #ff0000;"></i></span>
+
+                </li>
+                
               </ul>
         </div>
     </div>
