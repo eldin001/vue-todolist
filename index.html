@@ -15,7 +15,7 @@
         <div class="container  dbug">
             <h1>Argomenti corso.</h1>
             <ul class="list-group">
-                <li class="list-group-item">An item</li>
+                <li class="list-group-item" v-for="(element, index) in topics">{{element.text}}</li>
               </ul>
         </div>
     </div>
