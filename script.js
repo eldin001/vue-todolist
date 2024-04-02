@@ -7,6 +7,16 @@ createApp({
         return{
             topics: topics,
         }
+    },
+    methods: {
+        toggleDone(id){
+            const element = this.topics.find((el)=>{
+                return el.id === id;
+            })
+            if(element) {
+            element.done = !element.done;
+        }
+        }
     }
 }).mount('#app')
 
